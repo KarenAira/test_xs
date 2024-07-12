@@ -9,7 +9,7 @@ import os
 import requests
 from requests import get
 
-#prevent web close****************
+#prevent web close
 service = Service()
 options = webdriver.ChromeOptions()
 options.add_experimental_option("detach", True)
@@ -19,7 +19,6 @@ prefs={"download.default_directory":"\download"}
 options.add_experimental_option("prefs", prefs)
 
 
-#********************************************
 
 driver = webdriver.Chrome(service=service, options=options)
     #web IP for 192.168.10.97
