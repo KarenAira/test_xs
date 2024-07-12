@@ -79,7 +79,6 @@ def UI_xs():
     print("Left sidebar all correct!")
     time.sleep(10)
     
-
     #出勤
     def attendance():
         sidebar= driver.find_element(by=By.LINK_TEXT, value="出勤")
