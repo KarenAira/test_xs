@@ -18,7 +18,6 @@ options.add_experimental_option("detach", True)
 prefs={"download.default_directory":"\download"}
 options.add_experimental_option("prefs", prefs)
 
-
 #********************************************
 
 driver = webdriver.Chrome(service=service, options=options)
