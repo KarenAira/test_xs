@@ -18,7 +18,6 @@ options.add_experimental_option("detach", True)
 prefs={"download.default_directory":"\download"}
 options.add_experimental_option("prefs", prefs)
 
-
 driver = webdriver.Chrome(service=service, options=options)
     
 driver.get("http://192.168.10.97/")
@@ -35,7 +34,6 @@ def login():
     text_box = driver.find_element(by=By.CLASS_NAME, value="form-control")
     text_box.send_keys("Admin")
     
-
     #password input
     #*[@id="uid-xxxxxxxxxx"]
     #/html/body/div/div/div/main/div/div/div/div/div/div/div/form/div[2]/div/input
@@ -50,12 +48,10 @@ def login():
 login()
 
 
-
-
     
 def test_xscontrolevent():
 
-   
+
     driver.set_window_size(1936, 1056)
     driver.find_element(By.CSS_SELECTOR, ".text-left > .btn").click()
     element = driver.find_element(By.XPATH, "//div/button")
